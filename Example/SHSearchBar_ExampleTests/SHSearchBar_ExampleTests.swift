@@ -188,38 +188,38 @@ class SearchBarMock: SHSearchBar {
 
 class SearchBarAlwaysFalseDelegate: NSObject, SHSearchBarDelegate {
     // UITextField Pendants
-    @objc func searchBarShouldBeginEditing(searchBar: SHSearchBar) -> Bool {
+    @objc func searchBarShouldBeginEditing(_ searchBar: SHSearchBar) -> Bool {
         return false
     }
-    @objc func searchBarShouldEndEditing(searchBar: SHSearchBar) -> Bool {
+    @objc func searchBarShouldEndEditing(_ searchBar: SHSearchBar) -> Bool {
         return false
     }
-    @objc func searchBar(searchBar: SHSearchBar, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    @objc func searchBar(_ searchBar: SHSearchBar, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return false
     }
-    @objc func searchBarShouldClear(searchBar: SHSearchBar) -> Bool {
+    @objc func searchBarShouldClear(_ searchBar: SHSearchBar) -> Bool {
         return false
     }
-    @objc func searchBarShouldReturn(searchBar: SHSearchBar) -> Bool {
+    @objc func searchBarShouldReturn(_ searchBar: SHSearchBar) -> Bool {
         return false
     }
 }
 
 class SearchBarAlwaysTrueDelegate: NSObject, SHSearchBarDelegate {
     // UITextField Pendants
-    @objc func searchBarShouldBeginEditing(searchBar: SHSearchBar) -> Bool {
+    @objc func searchBarShouldBeginEditing(_ searchBar: SHSearchBar) -> Bool {
         return true
     }
-    @objc func searchBarShouldEndEditing(searchBar: SHSearchBar) -> Bool {
+    @objc func searchBarShouldEndEditing(_ searchBar: SHSearchBar) -> Bool {
         return true
     }
-    @objc func searchBar(searchBar: SHSearchBar, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    @objc func searchBar(_ searchBar: SHSearchBar, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return true
     }
-    @objc func searchBarShouldClear(searchBar: SHSearchBar) -> Bool {
+    @objc func searchBarShouldClear(_ searchBar: SHSearchBar) -> Bool {
         return true
     }
-    @objc func searchBarShouldReturn(searchBar: SHSearchBar) -> Bool {
+    @objc func searchBarShouldReturn(_ searchBar: SHSearchBar) -> Bool {
         return true
     }
 }
